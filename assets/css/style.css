@@ -1,0 +1,840 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/*
+Theme Name: xenon doe;
+Author: Musharaf Hossain;
+
+table of content
+----------------
+1. common css
+2. header css
+3. banner css
+4. about css
+5. service css
+6. project css
+7. counter css
+8. time-line css
+9. client css
+10. price css
+11. team css
+12. blog css
+13. cta css
+14. contact css
+15. footer css
+
+*/
+/* 1. common css */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  color: #333;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+/* Button css */
+.common-btn {
+  padding: 0;
+}
+.common-btn .btn-box {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  background: #ff3636;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: relative;
+}
+.common-btn .btn-box:hover {
+  background-color: #333;
+}
+.common-btn .btn-box i {
+  position: absolute;
+  top: 15px;
+  left: 4px;
+  font-size: 16px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.common-btn .btn-box:hover i {
+  color: #09cc81;
+  color: #fff;
+  visibility: visible;
+  opacity: 1;
+  left: 12px;
+}
+
+/* Section-Title CSS */
+.section-title {
+  width: 100%;
+  margin-bottom: 80px;
+}
+.section-title h2 {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 10px;
+}
+.section-title h2::before {
+  position: absolute;
+  content: "";
+  width: 90px;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background: #ff3636;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.section-title h2::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #ff3636;
+  bottom: -4px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  border-radius: 50%;
+}
+
+/* 2. Header CSS */
+.header-area {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 10px 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.header-area.stikey {
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 0px;
+  background: #fff;
+  z-index: 9999;
+  border-bottom: 1px solid #ddd;
+}
+.header-area.stikey a {
+  color: #333 !important;
+}
+.header-area.stikey .navbar-brand {
+  color: #ff3636 !important;
+}
+.header-area .navbar-brand {
+  color: white !important;
+  font-size: 25px;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-weight: 700;
+}
+.header-area ul li a {
+  color: #fff !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.header-area ul li a:hover {
+  color: #ff3636;
+}
+
+/* 3. Banner CSS */
+.banner-area {
+  position: relative;
+  height: 100vh;
+}
+.banner-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  z-index: -1;
+  opacity: 0.85;
+}
+.banner-area .banner-content {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+.banner-area .banner-content h1 {
+  font-size: 60px;
+  font-weight: 800;
+}
+.banner-area video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+
+/* 4. About CSS */
+.about-area .about-content h2 {
+  text-transform: capitalize;
+  font-size: 35px;
+  font-weight: 700;
+}
+.about-area .about-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.about-area .about-content ul li {
+  margin-bottom: 6px;
+}
+.about-area .about-content ul li i {
+  margin-right: 10px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  color: #ff3636;
+}
+
+/* 5. Service CSS */
+.service-area {
+  background: #f6f6f6;
+}
+.service-area .service {
+  background: #fff;
+  padding: 45px 20px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.service-area .service:hover i {
+  border-radius: 50%;
+}
+.service-area .service h2 {
+  position: absolute;
+  font-size: 60px;
+  font-weight: 600;
+  top: 0;
+  color: #ededed;
+}
+.service-area .service i {
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  background: #ff3636;
+  line-height: 60px;
+  color: #fff;
+  border-radius: 3px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.service-area .service h3 {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 20px 0px;
+}
+
+/* 6. Project CSS */
+.project-area .single-project {
+  position: relative;
+  overflow: hidden;
+}
+.project-area .single-project:hover .project-hover {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1) rotate(-360deg);
+      -ms-transform: scale(1) rotate(-360deg);
+          transform: scale(1) rotate(-360deg);
+}
+.project-area .single-project .single-project img {
+  width: 100%;
+}
+.project-area .single-project .project-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(0) rotate(0);
+      -ms-transform: scale(0) rotate(0);
+          transform: scale(0) rotate(0);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.project-area .single-project .project-hover::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #333;
+  opacity: 0.8;
+}
+.project-area .single-project .project-hover .project-content {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.project-area .single-project .project-hover .project-content a i {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 26px;
+  color: #fff;
+}
+.project-area .single-project .project-hover .project-content h3 {
+  text-transform: capitalize;
+  font-size: 25px;
+  line-height: 30px;
+}
+.project-area .single-project .project-hover .project-content h3 span {
+  display: block;
+  font-size: 17px;
+  text-transform: lowercase;
+  font-weight: 500;
+}
+
+/* 7. counter css */
+.counter-area {
+  background: #333;
+}
+.counter-area .section-title {
+  color: #ffff;
+}
+.counter-area .single-counter {
+  color: #fff;
+  text-align: center;
+}
+.counter-area .single-counter i {
+  width: 55px;
+  height: 55px;
+  background: #ff3636;
+  line-height: 55px;
+  font-size: 25px;
+}
+.counter-area .single-counter h2 {
+  font-size: 17px;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+.counter-area .single-counter h2 span {
+  display: block;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 65px;
+}
+
+/* 8. Time-Line CSS */
+.timeline-area .timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.timeline-area .timeline::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #ff3636;
+}
+.timeline-area .timeline li {
+  display: table;
+  clear: both;
+  position: relative;
+}
+.timeline-area .timeline li:nth-child(even) .timeline-box {
+  float: right;
+  text-align: left;
+}
+.timeline-area .timeline li .timeline-box {
+  width: 45%;
+  border: 1px solid #ff3636;
+  padding: 20px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+.timeline-area .timeline li .timeline-box span {
+  color: #ff3636;
+}
+.timeline-area .timeline li .timeline-box h4 {
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+.timeline-area .timeline li::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #ff3636;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+/* 9. Testimonial CSS */
+.testimonial-area {
+  background: #333;
+}
+.testimonial-area .section-title {
+  color: #fff;
+}
+.testimonial-area .testimonial {
+  max-width: 660px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+.testimonial-area .testimonial .single-testimonial {
+  padding: 10px;
+}
+.testimonial-area .testimonial .single-testimonial img {
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.testimonial-area .testimonial .single-testimonial p {
+  margin: 20px 0px;
+}
+.testimonial-area .testimonial .single-testimonial h3 {
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 30px;
+}
+.testimonial-area .testimonial .single-testimonial h3 span {
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: italic;
+}
+.testimonial-area .testimonial .slick-dots {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin: 20px 0px;
+}
+.testimonial-area .testimonial .slick-dots .slick-active button {
+  background-color: #ff3636;
+}
+.testimonial-area .testimonial .slick-dots li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.testimonial-area .testimonial .slick-dots li button {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-indent: -999999px;
+}
+
+/* 10. Price css */
+.price-area {
+  background: #f6f6f6;
+}
+.price-area .single-price {
+  text-align: center;
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 35px 20px;
+  position: relative;
+  overflow: hidden;
+}
+.price-area .single-price::before {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 0;
+  background: #FF3637;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  top: 100%;
+  left: 0;
+}
+.price-area .single-price::after {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 0;
+  background: #FF3637;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  right: 0;
+  bottom: 100%;
+}
+.price-area .single-price:hover::before, .price-area .single-price:hover::after {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+}
+.price-area .single-price h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.price-area .single-price h2 {
+  font-weight: 700;
+  font-size: 45px;
+}
+.price-area .single-price ul {
+  list-style: none;
+  padding: 0px;
+}
+.price-area .single-price ul li {
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 10px;
+}
+.price-area .single-price ul li:last-child {
+  border-bottom: 0;
+}
+
+/* 11. Team CSS */
+.team-area .single-team {
+  position: relative;
+  overflow: hidden;
+}
+.team-area .single-team:hover .team-social {
+  top: 0;
+}
+.team-area .single-team:hover .team-content {
+  bottom: 0;
+}
+.team-area .single-team img {
+  width: 100%;
+}
+.team-area .single-team .team-social {
+  position: absolute;
+  top: -65px;
+  text-align: center;
+  width: 100%;
+  background: #333;
+  padding: 20px 0px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.team-area .single-team .team-social a {
+  color: #fff;
+  margin: 0px 10px;
+  font-size: 18px;
+}
+.team-area .single-team .team-content {
+  position: absolute;
+  bottom: -84px;
+  width: 100%;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 10px 0px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.team-area .single-team .team-content h2 {
+  font-size: 21px;
+  text-transform: capitalize;
+  line-height: 28px;
+}
+.team-area .single-team .team-content h2 span {
+  display: block;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* 12. Blog CSS */
+.blog-area {
+  background: #f6f6f6;
+}
+.blog-area .single-blog {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+.blog-area .single-blog:hover img {
+  -webkit-transform: scale(1.1) rotate(5deg);
+      -ms-transform: scale(1.1) rotate(5deg);
+          transform: scale(1.1) rotate(5deg);
+}
+.blog-area .single-blog .blog-img {
+  overflow: hidden;
+}
+.blog-area .single-blog .blog-img img {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+}
+.blog-area .single-blog .blog-content {
+  padding: 10px 15px;
+}
+.blog-area .single-blog .blog-content h3 {
+  text-transform: capitalize;
+  font-size: 26px;
+}
+.blog-area .single-blog .blog-content h5 {
+  text-transform: capitalize;
+  font-size: 17px;
+  font-style: italic;
+  position: relative;
+}
+.blog-area .single-blog .blog-content h5 span {
+  margin-left: 16px;
+}
+.blog-area .single-blog .blog-content h5::before {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  content: "";
+  background: #837f7f;
+  left: 19%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.blog-area .single-blog .blog-content p {
+  margin: 15px 0px;
+}
+
+/* 13. CTA CSS */
+.cta-area {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+}
+.cta-area::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #333;
+  opacity: 0.85;
+  z-index: -1;
+}
+.cta-area .cta {
+  color: #fff;
+  width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+.cta-area .cta h2 {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* 14. contact CSS */
+.contact-area .contact-form input, .contact-area .contact-form textarea {
+  width: 100%;
+  padding: 6px;
+  margin: 3px 0px;
+  border: 1px solid #ddd;
+}
+.contact-area .contact-form input[type=submit] {
+  background: #ff3636;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.contact-area .contact-form input[type=submit]:hover {
+  background: #333;
+}
+.contact-area .contact-address {
+  margin-left: 30px;
+}
+.contact-area .contact-address .single-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 20px;
+}
+.contact-area .contact-address .single-address:last-child {
+  border-bottom: 0;
+}
+.contact-area .contact-address .single-address h2 {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 27px;
+}
+.contact-area .contact-address .single-address h2 span {
+  display: block;
+  font-size: 17px;
+  font-weight: normal;
+  text-transform: lowercase;
+}
+.contact-area .contact-address .single-address .contact-icon {
+  position: relative;
+}
+.contact-area .contact-address .single-address .contact-icon::before {
+  background: #ff3636;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  content: "";
+  left: -11px;
+  top: -10px;
+  z-index: -1;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.contact-area .contact-address .single-address .contact-icon i {
+  margin-right: 50px;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* 15. footer css */
+.footer-area {
+  background: #333;
+  color: #fff;
+  text-align: center;
+}
+.footer-area h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footer-area .footer-social {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+}
+.footer-area .footer-social a {
+  color: #fff;
+  margin: 0px 20px;
+  font-size: 20px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer-area .footer-social a:hover {
+  color: #ff3636;
+}
+
+/* =========================== Responsive CSS =============================== */
+/* tablet device responsive min width 768px */
+@media (max-width: 575.98px) {
+  .banner-area {
+    height: 360px;
+  }
+
+  .banner-area .banner-content h1 {
+    font-size: 35px !important;
+  }
+
+  .banner-content h5 {
+    font-size: 17px;
+  }
+
+  .about-content {
+    margin-top: 30px;
+  }
+
+  .counter-area .single-counter {
+    margin-bottom: 40px;
+  }
+
+  .price-area .single-price {
+    margin-bottom: 30px;
+  }
+
+  .team-area .single-team {
+    margin-bottom: 30px;
+  }
+
+  .blog-area .single-blog {
+    margin-bottom: 30px;
+  }
+
+  .contact-area .contact-address {
+    margin-top: 40px;
+  }
+}
+/* tablet device max-width:768px */
+@media (max-width: 767.98px) {
+  .contact-area .contact-address {
+    margin-top: 40px;
+  }
+}
+/* tablet device max-width:992px */
